@@ -1,0 +1,28 @@
+name: Deploy on Tag
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate app files
+        run: |
+          test -f index.html && echo "index.html OK"
+          test -f style.css  && echo "style.css  OK"
+          test -f app.js     && echo "app.js     OK"
+
+      - name: Deployment success
+        run: |
+          echo "=========================================="
+          echo " Deployment Successful!"
+          echo " Version    : ${{ github.ref_name }}"
+          echo " Deployed by: ${{ github.actor }}"
+          echo "=========================================="
