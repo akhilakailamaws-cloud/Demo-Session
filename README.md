@@ -27,7 +27,7 @@ A minimal todo app built for demonstrating Git versioning, deployment strategies
 ```
 main        ← production-ready, tagged releases
 develop     ← integration branch
-feature/*   ← individual feature branches
+feature/*   ← individual feature branches 
 ```
 
 ---
