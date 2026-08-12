@@ -1,3 +1,4 @@
+// final version
 const taskInput = document.getElementById("taskInput");
 const taskList  = document.getElementById("taskList");
 const emptyState = document.getElementById("emptyState");
