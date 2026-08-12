@@ -1,8 +1,4 @@
-# Friday Tech Session — Git Branching Strategy & Versioning
-
-**Audience:** Freshers → 3-5yr devs → TL → Manager
-
----
+## Git Branching Strategy & Versioning
 
 ## PART 1 — What is a Branching Strategy?
 
