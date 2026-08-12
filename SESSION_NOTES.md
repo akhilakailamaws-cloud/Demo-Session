@@ -25,7 +25,7 @@ It covers:
 │  LONG-LIVED (always exist)                           │
 │                                                      │
 │  ┌─────────┐        ┌──────┐                         │
-│  │ develop │        │ main │ ← production only        │
+│  │ develop │        │ main │ ← production only       │
 │  └─────────┘        └──────┘                         │
 │                                                      │
 │  SHORT-LIVED (create → use → delete)                 │
@@ -66,7 +66,7 @@ For frontend or projects without ticket numbers:
 │                    PROMOTION FLOW                          │
 │                                                            │
 │   feature/A ──┐                                            │
-│   feature/B ──┼──► integrate/sprint-14 ──► DEV testing    │
+│   feature/B ──┼──► integrate/sprint-14 ──► DEV testing     │
 │   feature/C ──┘         │                                  │
 │                         │ PR → develop (1 approval)        │
 │                         ▼                                  │
@@ -93,7 +93,7 @@ For frontend or projects without ticket numbers:
 ┌──────────────────────────────────────────────┐
 │               HOTFIX FLOW                    │
 │                                              │
-│         main (production is broken!) 🔴      │
+│         main (production is broken!) 🔴     │
 │           │                                  │
 │           ├──► hotfix/fix-critical-login     │
 │           │         │                        │
