@@ -1,11 +1,10 @@
 # Friday Tech Session — Git Branching Strategy & Versioning
 
 **Audience:** Freshers → 3-5yr devs → TL → Manager
-**Duration:** ~60 mins
 
 ---
 
-## PART 1 — What is a Branching Strategy? (5 mins)
+## PART 1 — What is a Branching Strategy?
 
 > "A branching strategy is not just — this branch goes to this environment.
 > It's about how your team writes, reviews, and ships code — without
@@ -19,7 +18,7 @@ It covers:
 
 ---
 
-## PART 2 — Branch Types (8 mins)
+## PART 2 — Branch Types
 
 ```
 ┌──────────────────────────────────────────────────────┐
@@ -57,7 +56,7 @@ It covers:
 
 ---
 
-## PART 3 — The Promotion Flow (10 mins)
+## PART 3 — The Promotion Flow
 
 ```
 ┌────────────────────────────────────────────────────────────┐
@@ -86,7 +85,7 @@ Key points:
 
 ---
 
-## PART 4 — Hotfix Flow (3 mins)
+## PART 4 — Hotfix Flow
 
 ```
 ┌──────────────────────────────────────────────┐
@@ -111,7 +110,7 @@ Key points:
 
 ---
 
-## PART 5 — Versioning & Tagging (5 mins)
+## PART 5 — Versioning & Tagging
 
 ### Semantic Versioning
 
@@ -140,7 +139,7 @@ Key points:
 
 ---
 
-## PART 6 — Branch Protection Rules (5 mins)
+## PART 6 — Branch Protection Rules
 
 > "This is how you enforce the strategy — not by telling people,
 > but by making GitHub enforce it automatically."
@@ -176,7 +175,7 @@ Key points:
 
 ---
 
-## PART 7 — LIVE DEMO (TaskFlow App) (20 mins)
+## PART 7 — LIVE DEMO (TaskFlow App)
 
 > "Now let's see all of this in action."
 
@@ -254,7 +253,7 @@ git checkout main
 
 ---
 
-## CLOSING — Key Takeaways (3 mins)
+## CLOSING — Key Takeaways
 
 | # | Rule |
 |---|---|
