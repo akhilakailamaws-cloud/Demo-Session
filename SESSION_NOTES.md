@@ -545,32 +545,12 @@ and it deploys that version automatically."
 
 ---
 
-## Questions & Answers to Prepare
+## Questions to Ask the Room
 
-**Q: Why do we not work directly on main?**
-> main is production. You would not edit a live database directly.
-> Same idea — isolate your work, test it, then merge it in.
-
-**Q: Why does main need 2 approvals but develop only needs 1?**
-> The cost of a mistake on main is 10x higher.
-> Two people verified it is safe to ship.
-
-**Q: What is the difference between a branch and a tag?**
-> A branch moves with every commit. A tag is frozen forever.
-> release-1.0.0 always means that exact code — nothing more.
-
-**Q: Why squash? Why not just merge all 5 commits?**
-> Because history is permanent. Those 5 commits will be there forever.
-> One clean commit tells the story. Five messy ones create noise.
-
-**Q: What if we need to go back to v1.0.0 in production?**
-> Re-trigger the pipeline with the v1.0.0 tag.
-> The pipeline deploys that exact version. No code changes needed.
-
-**Q: What is the difference between a minor and a patch version?**
-> Minor = new feature added, nothing existing is broken.
-> Patch = something broken is fixed, nothing new is added.
-
-**Q: Can a developer push directly to main if there is no branch protection?**
-> Yes — and that is the risk. Branch protection rules make it
-> impossible, not just against the rules. GitHub blocks the push.
+- Why do we not work directly on main?
+- Why does main need 2 approvals but develop only needs 1?
+- What is the difference between a branch and a tag?
+- Why squash? Why not just merge all 5 commits as they are?
+- What if we need to go back to v1.0.0 in production?
+- What is the difference between a minor and a patch version?
+- Can a developer push directly to main if there is no branch protection?
