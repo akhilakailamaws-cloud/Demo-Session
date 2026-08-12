@@ -147,11 +147,6 @@ but by making GitHub enforce it automatically.
 **Ask the room:**
 > Why does main need 2 approvals but develop only needs 1?
 
-**Answer:**
-> develop is your safety net — mistakes there are caught before production.
-> main is production. The cost of a mistake there is 10x higher.
-> Two approvals means two people verified this is safe to ship.
-
 ---
 
 ## PART 6 — Clean Commit History
@@ -195,11 +190,6 @@ Types:
 > If production broke at 2am and you opened git log —
 > which history would you rather see?
 
-**Answer:**
-> The clean one. Because you can immediately spot which commit
-> introduced the problem and revert it. With messy history,
-> you are guessing in the dark at 2am.
-
 ---
 
 ## PART 7 — Squashing
@@ -239,13 +229,6 @@ Save → write one clean commit message → save again.
 **Ask the room:**
 > Has anyone used git rebase before? What was your experience?
 
-**Answer to have ready:**
-> Rebase gets a bad reputation because people use it wrong —
-> usually rebasing shared branches. The rule is simple:
-> never rebase a branch that others are working on.
-> On your own feature branch, rebase is perfectly safe
-> and gives you a clean history before merging.
-
 ---
 
 ## PART 8 — Versioning
@@ -270,11 +253,6 @@ Save → write one clean commit message → save again.
 
 **Ask the room:**
 > If you added a new button to the UI — is that a major, minor, or patch?
-
-**Answer:**
-> Minor — it is a new feature, nothing existing is broken.
-> If you removed a button that other systems depended on, that is major.
-> If you just fixed a broken button, that is a patch.
 
 ---
 
@@ -316,12 +294,6 @@ to show which environment they belong to:
 
 **Ask the room:**
 > What is the difference between a branch and a tag?
-
-**Answer:**
-> A branch is a pointer that moves — every commit pushes it forward.
-> A tag is a pointer that never moves — it is locked to one commit forever.
-> release-1.0.0 will always mean exactly that code, nothing more, nothing less.
-> That is your audit trail. That is your rollback point.
 
 ---
 
@@ -543,14 +515,4 @@ and it deploys that version automatically."
 
 > That is the goal. Not just code that works — code that communicates.
 
----
 
-## Questions to Ask the Room
-
-- Why do we not work directly on main?
-- Why does main need 2 approvals but develop only needs 1?
-- What is the difference between a branch and a tag?
-- Why squash? Why not just merge all 5 commits as they are?
-- What if we need to go back to v1.0.0 in production?
-- What is the difference between a minor and a patch version?
-- Can a developer push directly to main if there is no branch protection?
