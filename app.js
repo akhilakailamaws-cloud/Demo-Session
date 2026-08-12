@@ -1,3 +1,4 @@
+// final version
 const taskInput = document.getElementById("taskInput");
 const taskList  = document.getElementById("taskList");
 const emptyState = document.getElementById("emptyState");
@@ -8,9 +9,10 @@ let tasks = [];
 
 function addTask() {
   const text = taskInput.value.trim();
+  const priority = document.getElementById("prioritySelect").value;
   if (!text) return;
 
-  tasks.push({ id: Date.now(), text, done: false });
+  tasks.push({ id: Date.now(), text, done: false, priority });
   taskInput.value = "";
   render();
 }
@@ -35,6 +37,10 @@ function render() {
       <input class="task-check" type="checkbox" ${task.done ? "checked" : ""}
         onchange="toggleTask(${task.id})" />
       <span class="task-text">${task.text}</span>
+      <span class="priority">${
+        task.priority === "high"   ? "🔴 High"   :
+        task.priority === "medium" ? "🟡 Medium" : "🟢 Low"
+      }</span>
       <button class="delete-btn" onclick="deleteTask(${task.id})">✕</button>
     `;
     taskList.appendChild(li);
