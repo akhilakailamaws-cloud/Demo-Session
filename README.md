@@ -43,7 +43,6 @@ At the same time:
 * Production problems need to be traceable.
 * We may need to roll back to a previous release.
 
-Ask the room:
 
 > If production is broken right now, how would you identify exactly which code is running in production?
 
@@ -104,7 +103,6 @@ hotfix/fix-critical-login
 
 The goal is that the branch name clearly communicates its purpose.
 
-### Ask the room
 
 > Why shouldn't developers normally work directly on main?
 
@@ -175,7 +173,6 @@ docs:     documentation
 chore:    maintenance
 ```
 
-### Ask the room
 
 > If production breaks at 2 AM and you open git log, which history would you rather see?
 
@@ -235,7 +232,6 @@ Rewriting history is safest on a private/local feature branch.
 
 Be careful when rebasing or force-pushing a branch that other developers are already using.
 
-### Ask the room
 
 > Would you rewrite history on a shared branch? Why or why not?
 
@@ -279,7 +275,6 @@ Backward-compatible bug fix — fix something without changing existing usage.
 v1.0.0 → v1.0.1
 ```
 
-### Ask the room
 
 > We add a new backward-compatible API endpoint. Major, minor or patch?
 
@@ -324,7 +319,6 @@ git tag
 git show v1.1.0
 ```
 
-### Ask the room
 
 > What is the difference between a branch and a tag?
 
@@ -435,7 +429,6 @@ Repository
  → Rules / Branch protection
 ```
 
-### Ask the room
 
 > Why might main require more approvals than develop?
 
@@ -701,7 +694,6 @@ Explain:
 
 # PART 13 — Closing Discussion
 
-Ask the room:
 
 > If a new developer joined this project tomorrow, could they look at our Git history and understand what happened?
 
